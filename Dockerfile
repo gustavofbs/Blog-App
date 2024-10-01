@@ -61,6 +61,9 @@ RUN groupadd --system --gid 1000 rails && \
     chown -R rails:rails db log storage tmp
 USER 1000:1000
 
+# Define the secret key base from an environment variable
+ENV SECRET_KEY_BASE=${SECRET_KEY_BASE}
+
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
