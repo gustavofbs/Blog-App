@@ -35,7 +35,7 @@ gem "bootsnap", require: false
 gem "dotenv-rails", groups: [ :development, :test ]
 
 # postgre database
-gem 'pg'
+gem "pg"
 
 
 
