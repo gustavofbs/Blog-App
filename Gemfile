@@ -32,7 +32,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
 # .env for credentials
-gem "dotenv-rails", groups: [ :development, :test ]
+gem "dotenv-rails", groups: [ :development, :test, :production ]
 
 # postgre database
 gem "pg"
